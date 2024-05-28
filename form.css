@@ -1,0 +1,64 @@
+/* FORM FILL UP */
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 740px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;  
+    font-size: 1.1rem; font-family: inherit; gap: 20px;
+    /* background-color: beige; */
+}
+form{
+    /* background-color: aqua; */
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    border: 2px solid rgb(70, 70, 70);
+    padding-left:15px ;
+    box-shadow: 0 0 6px 5px rgb(48, 48, 48);
+    border-radius: 20px;
+}
+h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+}
+.NAME,.PHONE,.EMAIL,.DOMAINNAME,.DOMAINEX{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+  
+}
+.NAME h4,.PHONE h4,.EMAIL h4,.DOMAINNAME h4,.DOMAINEX h4{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.name,.email,.phone,.domain-name,.domain-ex{
+    font-size: 0.9rem;
+    width: 300px;
+    padding: 5px;
+}
+.domain-ex option{
+    font-size: 1rem;
+}
+button{
+    height: 50px;
+    width: 120px;
+    margin-left: 600px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}

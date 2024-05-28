@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="identity"><b class="name">name </b>
+        <p><b>Email:</b> <span class="email">Your email</span></p>
+        <p><b>Mobile:</b> <span class="phone">Your Phone</span></p>
+    </div>
+        
+    </div>
+    <div class="hostmaster">
+        The HostMaster <br>
+        NP ccTLD Registration Services <br>
+        Mercantile Communications Pvt. Ltd. <br>
+        Email: hostmaster@mercantile.com.np br
+    </div>
+    <div id="d"> Date: <span id="date"></span></div>
+    <div class="subject"><b>Subject:</b> Application for <span class="domain-name"></span><span
+            class="domain-ex"></span> domain registration.</div>
+    <div class="main-body">
+        <p>Dear Sir/Madam,<br>
+            I am writing to request the registration of domain under my
+            name <span class="name"></span> with domain <span class="domain-name"></span><span class="domain-ex"></span>.
+        </p>
+        <br>
+        <p>Applying for registration of the domain <span class="domain-name"></span><span class="domain-ex"></span>
+            follows all the term and conditions of Domain registration residing at
+            “<u>https://register.com.np/terms-and-conditions</u>”. I submit the required
+            for the domain registrations as per the rule.</p>
+        <br>
+        <p>Thank you for “helping the industry and civil society to make them online”.
+            Entry area for <span class="domain-ex"></span> is "commercial" and Notes is "open ccTLD, any person
+            or entity is permitted to regis ter" as mentioned on “<u>https://register.com.np/np-ccTLDs</u>”.</p>
+        <br>
+        <p>I would be very grateful indeed for your help. Needless to say,
+            I will be glad to supply you with any further information you
+            may need. I look forward to hearing from you soon.</p>
+        <br>
+        <p>Your Sincerely,<br>
+            <span class="name">name</span>
+        </p>
+    </div>
+
+    <script>
+
+
+        let name = document.querySelectorAll(".name")
+        for (i = 0; i < name.length; i++) {
+            name[i].innerHTML = localStorage.getItem("name")
+        }
+
+        let email = document.querySelectorAll(".email")
+        for (i = 0; i < email.length; i++) {
+            email[i].innerHTML = localStorage.getItem("email")
+        }
+
+        let phone = document.querySelectorAll(".phone")
+        for (i = 0; i < phone.length; i++) {
+            phone[i].innerHTML = localStorage.getItem("phone")
+        }
+
+        let domainex = document.querySelectorAll(".domain-ex")
+        for (i = 0; i < domainex.length; i++) {
+            domainex[i].innerHTML = localStorage.getItem("domainex")
+        }
+
+        let domainname = document.querySelectorAll(".domain-name")
+        for (i = 0; i < domainname.length; i++) {
+            domainname[i].innerHTML = localStorage.getItem("domainname")
+        }
+
+
+        const date = document.getElementById("date")
+       // Create a new Date object for 28 May 2024
+const time = new Date('2024-05-28');
+
+const options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };
+const formattedDate = time.toLocaleDateString('en-GB', options).replace(',', '');
+
+// console.log(formattedDate); // Output:
+date.innerHTML=formattedDate
+
+        
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
