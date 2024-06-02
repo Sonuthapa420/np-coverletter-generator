@@ -5,13 +5,13 @@
 }
 body {
     height: 740px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;  
-    font-size: 1.1rem; font-family: inherit; gap: 20px;
+    font-size: 1.1rem; font-family: inherit; 
     /* background-color: beige; */
 }
 form{
     /* background-color: aqua; */
     height: 70%;
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +24,7 @@ form{
 }
 h5{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     width: 100%;
 }
@@ -41,7 +41,7 @@ h5{
 }
 .name,.email,.phone,.domain-name,.domain-ex{
     font-size: 0.9rem;
-    width: 300px;
+    width: 120%;
     padding: 5px;
 }
 .domain-ex option{
@@ -50,7 +50,7 @@ h5{
 button{
     height: 50px;
     width: 120px;
-    margin-left: 600px;
+    margin-left: 70%;
     border-radius: 10px;
     background-color: black;
     color: white;
@@ -61,4 +61,33 @@ button{
 button:hover{
     background-color: white;
     color: black;
+}
+
+@media only screen and (max-width:400px) {
+    body{
+        height: 550px;
+        width: 90%;
+        /* background-color: pink; */
+        display: flex;
+        /* align-items: center; */
+        justify-content: flex-start;
+        
+    }
+form{
+    height: 100%;
+    width: 100%;
+border: none;
+box-shadow: none;
+margin-left: 50px;
+}
+.NAME h4,.PHONE h4,.EMAIL h4,.DOMAINNAME h4,.DOMAINEX h4{
+    font-size: 1rem;
+}
+
+button{
+    margin-left: 60%;
+    font-size: 1rem;
+    height: 40px;
+    width: 100px;
+}
 }
