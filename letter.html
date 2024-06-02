@@ -11,10 +11,10 @@
 <body>
     <div class="header">
         <div class="identity"><b class="name">name </b>
-        <p><b>Email:</b> <span class="email">Your email</span></p>
-        <p><b>Mobile:</b> <span class="phone">Your Phone</span></p>
-    </div>
-        
+            <p><b>Email:</b> <span class="email">Your email</span></p>
+            <p><b>Mobile:</b> <span class="phone">Your Phone</span></p>
+        </div>
+
     </div>
     <div class="hostmaster">
         The HostMaster <br>
@@ -28,7 +28,8 @@
     <div class="main-body">
         <p>Dear Sir/Madam,<br>
             I am writing to request the registration of domain under my
-            name <span class="name"></span> with domain <span class="domain-name"></span><span class="domain-ex"></span>.
+            name <span class="name"></span> with domain <span class="domain-name"></span><span
+                class="domain-ex"></span>.
         </p>
         <br>
         <p>Applying for registration of the domain <span class="domain-name"></span><span class="domain-ex"></span>
@@ -79,21 +80,13 @@
 
 
         const date = document.getElementById("date")
-       // Create a new Date object for 28 May 2024
-const time = new Date('2024-05-28');
-
-const options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };
-const formattedDate = time.toLocaleDateString('en-GB', options).replace(',', '');
-
-// console.log(formattedDate); // Output:
-date.innerHTML=formattedDate
-
-        
-
-
-        
-
-
+        function getFormattedDate() {
+            const date = new Date();  // Create a new Date object for the current date
+            const options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };  // Define options for formatting
+            const formattedDate = date.toLocaleDateString('en-GB', options).replace(',', ''); // Format the date using toLocaleDateString and remove the comma
+            return formattedDate;
+        }
+        date.innerHTML = (getFormattedDate());
     </script>
 </body>
 
