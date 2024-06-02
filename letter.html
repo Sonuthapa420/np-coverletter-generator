@@ -78,15 +78,14 @@
         }
 
 
-        const date = document.getElementById("date")
-       // Create a new Date object for 28 May 2024
-const time = new Date('2024-05-28');
-
-const options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };
-const formattedDate = time.toLocaleDateString('en-GB', options).replace(',', '');
-
-// console.log(formattedDate); // Output:
-date.innerHTML=formattedDate
+      const date = document.getElementById("date")
+        function getFormattedDate() {
+            const date = new Date();  // Create a new Date object for the current date
+            const options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };  // Define options for formatting
+            const formattedDate = date.toLocaleDateString('en-GB', options).replace(',', ''); // Format the date using toLocaleDateString and remove the comma
+            return formattedDate;
+        }
+        date.innerHTML = (getFormattedDate());
 
         
 
