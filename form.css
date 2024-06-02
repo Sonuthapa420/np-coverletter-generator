@@ -63,7 +63,7 @@ button:hover{
     color: black;
 }
 
-@media (max-width:600px) and (min-width:400px) {
+@media (max-width:700px) and (min-width:300px) {
     body{
         height: 550px;
         width: 90%;
